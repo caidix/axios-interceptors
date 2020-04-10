@@ -22,3 +22,5 @@ export interface HandlerFunction {
   responseResolve?: (value: AxiosResponse) => AxiosResponse | Promise<AxiosResponse>
   responseReject?: (error: any) => any
 }
+
+export type Handler = (Vue?: any) => HandlerFunction
